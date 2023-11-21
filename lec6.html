@@ -1,0 +1,72 @@
+<!--3. Create 3 divisions in a web page.
+• Make the first div has 3 paragraphs and each paragraph has a background with red color
+• (Create a transition from darker red to a lighter).
+• Make the second div has an image background with horizontally repeated.
+• Add in the third div an image on the (right top) and make it fixed.
+• Add Box model on a text in the third div, that has Total element width equal 400px-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <style>
+ /* Styles for the first div */
+
+ #div1 {
+ background: linear-gradient(to bottom, #8B0000, #FF0000);
+ padding: 20px;
+ color: white;
+ }
+ /* Styles for the second div */
+
+ #div2 {
+ background: url('download.jpeg') repeat-x;
+ height: 300px;
+ /* Set the height as needed */
+ }
+ /* Styles for the third div */
+
+ #div3 {
+ position: relative;
+ height: 300px;
+ /* Set the height as needed */
+ }
+
+ #fixedImage {
+ position: fixed;
+ top: 0;
+ right: 0;
+ width: 100px;
+ /* Set the width as needed */
+ height: 100px;
+ /* Set the height as needed */
+ }
+
+ #boxModelText {
+ width: 400px;
+ padding: 20px;
+ box-sizing: border-box;
+ background: rgba(255, 255, 255, 0.8);
+ }
+ </style>
+</head>
+<body>
+ <!-- First Division -->
+ <div id="div1">
+ <p>Paragraph 1</p>
+ <p>Paragraph 2</p>
+ <p>Paragraph 3</p>
+ </div>
+ <!-- Second Division -->
+ <div id="div2"></div>
+ <!-- Third Division -->
+ <div id="div3">
+ <!-- Fixed Image -->
+ <img id="fixedImage" src="download.jpeg" alt="Fixed Image">
+ <!-- Box Model Text -->
+ <div id="boxModelText">
+ <p>Your text goes here.</p>
+ </div>
+ </div>
+</body>
+</html>

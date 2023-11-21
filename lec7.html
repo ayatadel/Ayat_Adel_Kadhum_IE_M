@@ -1,0 +1,47 @@
+<!-- Discussion
+1. What are the generic font families? Explain in details with examples
+• Serif: Fonts with small decorative lines at the end of characters. Common examples
+include Times New Roman, Georgia, and Garamond.
+• Sans-serif: Fonts without the decorative lines. Examples include Arial, Helvetica, and
+Verdana.
+• Monospace: Characters have a fixed width, suitable for code. Examples include Courier
+New, Monaco, and Consolas.
+• Cursive: Fonts that simulate handwriting. Examples include Comic Sans MS, cursive.
+• Fantasy: Decorative fonts with artistic flair. Examples include Impact, fantasy.
+2. It is recommended to use each family of generic fonts in fallback style. Why?
+It's recommended to use generic font families in fallback style because specific fonts may not
+be available on all devices. If a user doesn't have the specified font installed, the browser will
+fall back to the generic font family, ensuring a consistent and readable experience.
+Example:-->
+body {
+ font-family: 'Open Sans', Arial, sans-serif;
+}
+3. How can you insert Hoverable Table by CSS? Show me by code.
+To make a table row hoverable, you can use the :hover pseudo-class in CSS. Here's an example:
+table {
+ border-collapse: collapse;
+ width: 100%;
+}
+table, th, td {
+ border: 1px solid black;
+}
+tr:hover {
+ background-color: #f5f5f5;
+}
+4. Insert list markers by CSS, once outside the border and another inside it, as shown below
+ul {
+ list-style-position: outside;
+ border: 2px solid #333;
+ padding: 10px;
+}
+li {
+ margin: 5px 0;
+}
+ul {
+ list-style-position: inside;
+ border: 2px solid #333;
+ padding: 10px;
+}
+li {
+ margin: 5px 0;
+}

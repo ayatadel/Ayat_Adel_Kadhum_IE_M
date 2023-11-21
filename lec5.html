@@ -1,0 +1,108 @@
+<!--Discussion 1.
+1. What are the limitations of CSS ?
+• Browser Compatibility: Different browsers may interpret CSS rules differently, leading
+to inconsistencies in the appearance of a website. Cross-browser testing is essential to
+ensure a consistent user experience.
+• Limited Layout Control: CSS was originally designed for styling, not layout, and as a
+result, complex layouts can sometimes be challenging to achieve without additional tools
+or frameworks.
+• No Variables in Standard CSS: While preprocessors like Sass and Less introduce
+variables, vanilla CSS lacks native support for variables, making it harder to maintain
+consistency and make global changes.
+• Global Scope: CSS operates in a global scope, which can lead to unintentional style
+conflicts when working with large projects or third-party libraries.
+• Limited Dynamic Functionality: CSS is primarily a styling language and lacks the
+capability for complex logic or dynamic behavior. This is where JavaScript comes into
+play for more interactive and dynamic web applications.
+• Print Limitations: Controlling the layout for print styles can be challenging, and not all
+CSS features are supported in print media.-->
+
+<!--2. How many ways can a CSS be integrated as a web page?
+• Inline Styles: Styles are directly applied to individual HTML elements using the style
+attribute.
+• Internal/Embedded Styles: CSS is placed within the HTML document using the <style>
+tag in the <head> section.
+• External Stylesheets: CSS is stored in separate external files and linked to the HTML
+document using the <link> tag.-->
+<!--3. Create a home page for a ressturant with what you’ve learned from HTML & CSS-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="styles.css">
+ <title>Restaurant Homepage</title>
+</head>
+<body>
+ <header>
+ <h1>Delicious Dining</h1>
+ <nav>
+ <ul>
+ <li><a href="#home">Home</a></li>
+ <li><a href="#menu">Menu</a></li>
+ <li><a href="#about">About Us</a></li>
+ <li><a href="#contact">Contact</a></li>
+ </ul>
+ </nav>
+ </header>
+ <section id="home">
+ <h2>Welcome to Delicious Dining</h2>
+ <p>Experience the finest in dining with our exquisite menu and cozy ambiance.</p>
+ </section>
+ <section id="menu">
+ <h2>Our Menu</h2>
+ <ul>
+ <li>Appetizers</li>
+ <li>Main Courses</li>
+ <li>Desserts</li>
+ </ul>
+ </section>
+ <section id="about">
+ <h2>About Us</h2>
+ <p>Discover the story behind Delicious Dining and our commitment to quality.</p>
+ </section>
+ <section id="contact">
+ <h2>Contact Us</h2>
+ <p>Reach out to us for reservations and inquiries.</p>
+ </section>
+ <footer>
+ <p>&copy; 2023 Delicious Dining. All rights reserved.</p>
+ </footer>
+</body>
+</html>
+body {
+ font-family: 'Arial', sans-serif;
+ margin: 0;
+ padding: 0;
+}
+header {
+ background-color: #333;
+ color: #fff;
+ padding: 1em;
+ text-align: center;
+}
+nav ul {
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+}
+nav ul li {
+ display: inline;
+ margin-right: 20px;
+}
+nav a {
+ text-decoration: none;
+ color: #fff;
+}
+section {
+ padding: 2em;
+}
+footer {
+ background-color: #333;
+ color: #fff;
+ text-align: center;
+ padding: 1em;
+ position: fixed;
+ bottom: 0;
+ width: 100%;
+}
